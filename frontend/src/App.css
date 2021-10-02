@@ -1,0 +1,89 @@
+body{
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  min-width: 500px;
+  border: 2px red solid;
+  padding: 2rem;
+  height: 90vh;
+  background-color:#B39CD0;
+}
+
+.heading{
+  margin-bottom: auto;
+}
+
+.textArea{
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.chatRoom{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 70vh;
+  overflow-y: scroll;
+}
+.chatRoom::-webkit-scrollbar {
+  display: none;
+}
+
+.message{
+  display: flex;
+  align-content: center;
+}
+
+.message.pc{
+  justify-content: flex-start;
+  
+}
+
+.message.user{
+  justify-content: flex-end;
+}
+
+.message__icon{
+  background-color: #FEFEDF;
+  border-radius: 50%;
+  min-width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 0 0.2rem;
+}
+.message__data{
+  border:1px black solid;
+  width: auto;
+  background-color: #FEFEDF;
+  margin: 0.3rem 0;
+  padding: 0.3rem;
+  border-radius: 1rem;
+}
+
+.message__icon svg{
+  height: 2rem;
+  width: 2rem;
+}
+
+#message{
+  border: none;
+  padding: 0.3rem;
+  border-radius: 1rem;
+  width: 80%;
+}
+
+button{
+  border: none;
+  background-color: tomato;
+  border-radius: 1rem;
+  width: 15%;
+}
